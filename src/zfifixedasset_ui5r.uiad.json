@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "An SAP Fiori application.",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Fixed Asset Update"
+  },
+  "ui5AppDetails": {
+    "appId": "zfifixedasset"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_47774552956AE00AC192AC770C2E1AA1D903F69D_TM",
+    "semanticObject": "zfifixedasset",
+    "action": "manage",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_47774552956AE00AC192AC770C2E1AA1D903F69D_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Fixed Asset Update",
+        "subtitle": "Fixed Asset Update"
+      }
+    }
+  ]
+}

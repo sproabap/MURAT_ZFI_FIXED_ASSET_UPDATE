@@ -1,0 +1,66 @@
+managed implementation in class ZBP_R_FI_FIXED_ASSET unique;
+//strict ( 2 );
+with draft;
+//extensible;
+define behavior for ZR_FI_FIXED_ASSET alias ZrFiFixedAsset
+persistent table ZFI_FIXED_ASSET
+//extensible
+draft table ZFI_FIX_ASSET_D
+etag master LocalLastChangedAt
+lock master total etag LastChangedAt
+authorization master( global )
+with additional save
+{
+  field ( mandatory : create )
+   Companycode,
+   Masterfixedasset,
+   Fixedasset,
+   Ledger,
+   AssetRealDepreciationArea;
+
+
+  field ( readonly )
+   CreatedBy,
+   CreatedAt,
+   LastChangedBy,
+   LastChangedAt,
+   LocalLastChangedAt;
+
+  field ( readonly : update )
+   Companycode,
+   Masterfixedasset,
+   Fixedasset,
+   Ledger,
+   AssetRealDepreciationArea;
+
+
+
+  create;
+  update;
+  delete;
+
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Edit;
+  draft action Resume;
+  draft determine action Prepare;
+
+    static action ExcelUpload deep parameter ZA_FI_FIXED_ASSET_STREAM ;
+
+
+  mapping for ZFI_FIXED_ASSET corresponding //extensible
+  {
+    Companycode = companycode;
+    Masterfixedasset = masterfixedasset;
+    Fixedasset = fixedasset;
+    Ledger = ledger;
+    Assetrealdepreciationarea = assetrealdepreciationarea;
+    Fixedassetdescription = fixedassetdescription;
+    Costcenter = costcenter;
+    Profitcenter = profitcenter;
+    Depreciationkey = depreciationkey;
+    Plannedusefullifeinyears = plannedusefullifeinyears;
+    Depreciationstartdate = depreciationstartdate;
+  }
+
+}

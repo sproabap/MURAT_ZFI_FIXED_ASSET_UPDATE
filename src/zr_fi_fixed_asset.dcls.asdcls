@@ -1,0 +1,6 @@
+@EndUserText.label: 'ZR_FI_FIXED_ASSET'
+@MappingRole: true
+define role ZR_FI_FIXED_ASSET {
+  grant select on ZR_FI_FIXED_ASSET
+  where TRUE;
+}

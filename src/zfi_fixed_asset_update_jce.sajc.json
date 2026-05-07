@@ -1,0 +1,16 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "",
+    "originalLanguage": "tr",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "className": "ZCL_FI_FIXED_ASSET_JOB"
+  },
+  "parameters": [
+    {
+      "name": "MV_FIXED_ASSET"
+    }
+  ]
+}

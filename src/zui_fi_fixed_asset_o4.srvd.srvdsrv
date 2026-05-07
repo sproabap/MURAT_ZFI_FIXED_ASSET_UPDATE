@@ -1,0 +1,11 @@
+@EndUserText: {
+  label: 'Service Definition for ZC_FI_FIXED_ASSET'
+}
+@ObjectModel: {
+  leadingEntity: {
+    name: 'ZC_FI_FIXED_ASSET'
+  }
+}
+define service ZUI_FI_FIXED_ASSET_O4 provider contracts odata_v4_ui {
+  expose ZC_FI_FIXED_ASSET;
+}

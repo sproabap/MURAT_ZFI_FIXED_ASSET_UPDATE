@@ -1,0 +1,7 @@
+abstract;
+strict ( 2 );
+with hierarchy;
+
+define behavior for ZA_FI_FIXED_ASSET_ABST //alias <alias_name>
+{
+}

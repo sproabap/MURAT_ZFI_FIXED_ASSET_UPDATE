@@ -1,0 +1,6 @@
+@EndUserText.label: 'ZC_FI_FIXED_ASSET'
+@MappingRole: true
+define role ZC_FI_FIXED_ASSET {
+  grant select on ZC_FI_FIXED_ASSET
+  where INHERITING CONDITIONS FROM ENTITY ZR_FI_FIXED_ASSET REPLACING { ROOT WITH _BaseEntity };
+}

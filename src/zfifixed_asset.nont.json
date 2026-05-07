@@ -1,0 +1,11 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "",
+    "originalLanguage": "tr",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "name": "ZFIFIXED_ASSET",
+  "sapObjectType": "ZFIFIXED_ASSET",
+  "rootNode": true
+}

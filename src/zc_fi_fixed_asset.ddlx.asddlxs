@@ -1,0 +1,251 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'Companycode'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'Companycode'
+annotate view ZC_FI_FIXED_ASSET with
+{ 
+
+  @EndUserText.label: 'Company Code'
+  @UI.facet: [ {
+    label: 'General Information', 
+    id: 'GeneralInfo', 
+    purpose: #STANDARD, 
+    position: 10 , 
+    type: #IDENTIFICATION_REFERENCE
+  } ]
+  @UI.identification: [ {
+    position: 10 , 
+    label: 'Company Code'
+  } ]
+   @UI.lineItem: [ {
+    position: 10 , 
+    label: 'Company Code'
+  } ]
+  @UI.selectionField: [ {
+    position: 10 
+  } ]
+  CompanyCode;
+  
+  @EndUserText.label: 'Master Fixed Asset'
+  @UI.identification: [ {
+    position: 20 , 
+    label: 'Master Fixed Assett'
+  } ]
+  @UI.lineItem: [ {
+    position: 20 , 
+    label: 'Master Fixed Asset'
+  } ]
+  @UI.selectionField: [ {
+    position: 20 
+  } ]
+  MasterFixedAsset;
+  
+  @EndUserText.label: 'Fixed Asset'
+  @UI.identification: [ {
+    position: 30 , 
+    label: 'Fixed Asset'
+  } ]
+  @UI.lineItem: [ {
+    position: 30 , 
+    label: 'Fixed Asset'
+  } ]
+  @UI.selectionField: [ {
+    position: 30 
+  } ]
+  FixedAsset;
+  
+    @EndUserText.label: 'Ledger'
+  @UI.identification: [ {
+    position: 40 , 
+    label: 'Ledger'
+  } ]
+  @UI.lineItem: [ {
+    position: 40 , 
+    label: 'Ledger'
+  } ]
+  @UI.selectionField: [ {
+    position: 40 
+  } ]
+  Ledger;
+  
+   
+  @EndUserText.label: 'Fixed Asset Description'
+  @UI.identification: [ {
+    position: 50 , 
+    label: 'Fixed Asset Description'
+  } ]
+  @UI.lineItem: [ {
+    position: 50 , 
+    label: 'Fixed Asset Description'
+  } ]
+  @UI.selectionField: [ {
+    position: 50 
+  } ]
+  FixedAssetDescription;
+  
+  @EndUserText.label: 'Asset Real Depreciation Area'
+  @UI.identification: [ {
+    position: 60 , 
+    label: 'Asset Real Depreciation Area'
+  } ]
+  @UI.lineItem: [ {
+    position: 60 , 
+    label: 'Asset Real Depreciation Area'
+  } ]
+  @UI.selectionField: [ {
+    position: 60 
+  } ]
+  AssetRealDepreciationArea;
+  
+ 
+  
+    @EndUserText.label: 'Depreciation Key'
+  @UI.identification: [ {
+    position: 61 , 
+    label: 'Depreciation Key'
+  } ]
+  @UI.lineItem: [ {
+    position: 61 , 
+    label: 'Depreciation Key'
+  } ]
+  @UI.selectionField: [ {
+    position: 61 
+  } ]
+  DepreciationKey;
+  
+  @EndUserText.label: 'Cost Center'
+  @UI.identification: [ {
+    position: 70 , 
+    label: 'Cost Center'
+  } ]
+  @UI.lineItem: [ {
+    position: 70 , 
+    label: 'Cost Center'
+  } ]
+  @UI.selectionField: [ {
+    position: 70 
+  } ]
+  CostCenter;
+  
+  @EndUserText.label: 'Profit Center'
+  @UI.identification: [ {
+    position: 80 , 
+    label: 'Profit Center'
+  } ]
+  @UI.lineItem: [ {
+    position: 80 , 
+    label: 'Profit Center'
+  } ]
+  @UI.selectionField: [ {
+    position: 80 
+  } ]
+  ProfitCenter;
+  
+
+
+  
+  @EndUserText.label: 'Planned Useful Life in Years'
+  @UI.identification: [ {
+    position: 100 , 
+    label: 'Planned Useful Life in Years'
+  } ]
+  @UI.lineItem: [ {
+    position: 100 , 
+    label: 'Planned Useful Life in Years'
+  } ]
+  @UI.selectionField: [ {
+    position: 100 
+  } ]
+  PlannedUsefulLifeInYears;
+  
+  @EndUserText.label: 'Depreciation Start Date'
+  @UI.identification: [ {
+    position: 110 , 
+    label: 'Depreciation Start Date'
+  } ]
+  @UI.lineItem: [ {
+    position: 110 , 
+    label: 'Depreciation Start Date'
+  } ]
+  @UI.selectionField: [ {
+    position: 110 
+  } ]
+  DepreciationStartDate;
+  
+  @UI.identification: [ {
+    position: 120 
+  } ]
+  @UI.lineItem: [ {
+    position: 120 
+  } ]
+  @UI.selectionField: [ {
+    position: 120 
+  } ]
+  @UI.hidden: true
+  CreatedBy;
+  
+  @UI.identification: [ {
+    position: 130 
+  } ]
+  @UI.lineItem: [ {
+    position: 130 
+  } ]
+  @UI.selectionField: [ {
+    position: 130 
+  } ]
+  @UI.hidden: true
+  CreatedAt;
+  
+  @UI.identification: [ {
+    position: 140 
+  } ]
+@UI.lineItem: [{ type:#FOR_ACTION , 
+                 dataAction: 'ExcelUpload' , 
+                 label: 'Upload Excel',
+                 position: 10 , importance: #HIGH }
+]  
+  @UI.selectionField: [ {
+    position: 140 
+  } ]
+  @UI.hidden: true
+  LastChangedBy;
+  
+  @UI.identification: [ {
+    position: 150 
+  } ]
+  @UI.lineItem: [ {
+    position: 150 
+  } ]
+  @UI.selectionField: [ {
+    position: 150 
+  } ]
+  @UI.hidden: true
+  LastChangedAt;
+  
+  @UI.identification: [ {
+    position: 160 
+  } ]
+  @UI.lineItem: [ {
+    position: 160 
+  } ]
+  @UI.selectionField: [ {
+    position: 160 
+  } ]
+  @UI.hidden: true
+  LocalLastChangedAt;
+  
+  @EndUserText.label: '_BaseEntity'
+  @UI.identification: [ {
+    position: 170 , 
+    label: '_BaseEntity'
+  } ]
+  @UI.lineItem: [ {
+    position: 170 , 
+    label: '_BaseEntity'
+  } ]
+  @UI.selectionField: [ {
+    position: 170 
+  } ]
+  _BaseEntity;
+}
